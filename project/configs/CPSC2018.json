@@ -1,7 +1,7 @@
 {
-    "data_dir": "/Users/jeroen/ECG/data/CPSC2018/validation_set",
-    "train_labels_csv": "/Users/jeroen/ECG/data/CPSC2018/validation_set/CPSC2018_REFERENCES.csv",
-    "test_labels_csv": "/Users/jeroen/ECG/data/CPSC2018/validation_set/CPSC2018_REFERENCES.csv",
+    "data_dir": "/home/jupyter/DATA/ECG/CPSC2018/validation_set",
+    "train_labels_csv": "/home/jupyter/DATA/ECG/CPSC2018/validation_set/REFERENCE.csv",
+    "test_labels_csv": "/home/jupyter/DATA/ECG/CPSC2018/validation_set/REFERENCE.csv",
     "epochs": 60,
     "OOD_classname": "none", 
     "max_sample_length" : 5000,

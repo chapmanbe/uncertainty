@@ -19,6 +19,9 @@ import pandas as pd
 
 from .ecgresnet import Flatten
 
+def shortcut(x):
+    return x
+
 class BayesLinear(nn.Module):
     """
     This class implements a Bayesian Linear layer, which has a distribution instead of weights. 
@@ -242,7 +245,7 @@ class BayesBasicBlock(nn.Module):
         )
         
         if in_channels == out_channels and stride == 1:
-            self.shortcut = lambda x: x
+            self.shortcut = shortcut
             
         else:
             self.shortcut = BayesConv1d(in_channels, out_channels, kernel_size = 1, 
